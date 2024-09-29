@@ -1,0 +1,111 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locomotive Scrollable</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <img src="./image.jpg" alt="Butterfly" >
+            <h1>WINA</h1>
+            <p>Noob at Web</p>
+        </div>
+    </main>
+
+    <script>
+      (function () {
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('main'),  // Make sure it's scrolling the correct element
+            smooth: true,  // Smooth scrolling for a nicer effect
+            getDirection: true,  // Track scroll direction
+            multiplier: 1.5,  // Scroll speed
+        });
+    
+        // Add event listener if you want to react to scroll events
+        scroll.on('scroll', (args) => {
+            // Do something on scroll, like changing background color or text
+            console.log(args.direction);  // Logs the scroll direction
+        });
+    })();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"
+      rel="stylesheet"
+    />
+</body>
+</html> -->
+
+<!-- Another Version -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <section class="navbar">
+    <ul class="navbar-links-list">
+      <li class="navbar-list-item">
+        <p class="navbar-item">WORK</p>
+      </li>
+      <li class="navbar-list-item">
+        <p class="navbar-item">ABOUT</p>
+      </li>
+      <li class="navbar-list-item">
+        <p class="navbar-item">CONTACT</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="parallax-section">
+    <div class="parallax-content">
+      <h2>Seperti pizza 🍕 <br />
+        yang selalu dinantikan semua orang </h2>
+      <p>Selalu nantikan aku ya..</p>
+    </div>
+  </section>
+
+  <section class="hero" data-scroll-container>
+    <div class="container-left" data-scroll-section>
+      <h1 class="hero-text" data-scroll data-scroll-speed="1">
+        Halo <br />
+        Aku Marsha
+      </h1>
+    </div>
+    <div class="container-right">
+      <div class="hero-image">
+        <img class="gambar" src="./marsha.jpg" alt="hero-image" />
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+  <script>
+    (function () {
+      const locomotiveScroll = new LocomotiveScroll();
+    })();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" rel="stylesheet" />
+</body>
+
+</html>
